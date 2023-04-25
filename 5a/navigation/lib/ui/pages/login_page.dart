@@ -17,8 +17,7 @@ class _LoginPageState extends State<LoginPage> {
         children: [
           TextButton(
               onPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const HomePage()));
+                Navigator.of(context).pushNamed('/home');
               },
               child: const Text('Login'))
         ],

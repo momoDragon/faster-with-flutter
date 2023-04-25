@@ -17,10 +17,8 @@ class _HomePageState extends State<HomePage> {
         children: [
           TextButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const ProfilePage(
-                          userId: '33213',
-                        )));
+                Navigator.of(context)
+                    .pushNamed('/profile', arguments: {'userId': '33213'});
               },
               child: const Text('View profile'))
         ],
