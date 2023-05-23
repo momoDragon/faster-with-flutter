@@ -21,7 +21,6 @@ final _router = GoRouter(routes: $appRoutes);
     ])
   ],
 )
-
 class LoginRoute extends GoRouteData {
   const LoginRoute();
 
